@@ -45,4 +45,4 @@ This pass changed presentation and recorded existing game releases. It did not r
 
 [Machine-readable presentation evidence](../examples/little-star-jump/evidence/presentation-checks.json) · [Recording provenance](../examples/little-star-jump/MEDIA.md)
 
-The renderer check used GitHub's Markdown API plus local GitHub-style CSS. It is not a claim that a new showcase repository is already published. Live repository rendering awaits first publication authorization. Review was performed by the same Codex operator; owner visual acceptance remains a manual check.
+The initial renderer check used GitHub's Markdown API plus local GitHub-style CSS. After owner authorization, the [public showcase](https://github.com/burakync/gamefactory-agents) was published on 21 October 2026. All 38 published files matched the prepared package. The live GitHub README and detailed example then passed headless Edge checks at 1280 and 390 pixels: all diagrams and GIFs loaded, with no page overflow. Review was performed by the same Codex operator; owner visual acceptance remains a manual check.
