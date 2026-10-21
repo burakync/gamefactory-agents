@@ -1,85 +1,105 @@
-# GameFactory V2
+# GameFactory Agents
 
-### An experimental multi-agent framework for AI-assisted game development
+### From game-development intent to inspectable, playable results.
 
-GameFactory organizes game-development work around shared context, bounded tasks, verifiable outputs and explicit human decisions.
+**Burak Yenice** · **GameFactory V2** · Applied AI at **DTU** · Proprietary framework
 
-**Burak Yenice** · Applied AI studies at the **Technical University of Denmark (DTU)** · Proprietary core · Experimental preview
+[Architecture](docs/architecture.md) · [Applied AI case study](docs/applied-ai-case-study.md) · [Three real iterations](examples/little-star-jump/README.md) · [Play the demo](examples/little-star-jump/SOURCE.md)
 
-[Architecture](docs/architecture.md) · [Applied AI case study](docs/applied-ai-case-study.md) · [Demonstration](docs/demo.md) · [Verification](docs/verification.md)
+## What is GameFactory?
 
-![GameFactory: Context, execution and evidence](assets/hero.svg)
+GameFactory is an experimental framework for AI-assisted game development. It organizes requirements, bounded tasks, source changes, tests and review around shared project context—so an iteration can be traced from the owner's request to a working result.
 
-## The problem
+This repository is a product showcase, technical portfolio and Applied AI case study. The framework core is proprietary and excluded. Commercial licensing is not yet generally available. [Copyright and scope](COPYRIGHT.md).
 
-A useful AI-generated change can still break a game. Requirements are scattered across conversations, agents lose decisions during handoffs, and a successful command may be mistaken for a successful product. Without traceable context and evaluation, iteration becomes difficult to explain or reproduce.
+## Multi-Agent Architecture
 
-## The approach
+![GameFactory roles, shared context and implemented coordination](assets/architecture.svg)
 
-GameFactory treats AI-assisted development as a controlled workflow. A Director selects relevant context and specialist responsibilities. External workers receive bounded tasks. Source changes, tests and review remain separate steps, with human approval for material decisions.
+The Director selects context and routes specialist responsibilities. Game Design, Development, Art and QA are distinct roles; their contracts are implemented, while execution requires an external host. **The Director is deterministic orchestration, not an LLM.** The demonstration below used one external Codex operator, with same-agent review—not an independent agent swarm.
 
-The implemented Director is deterministic orchestration. Role definitions and external task contracts do not imply that autonomous model workers are running.
+[View full-size diagram](assets/architecture.svg) · [Architecture and execution boundaries](docs/architecture.md)
 
-## Architecture
+## Core Capabilities
 
-![Conceptual roles and implemented coordination](assets/architecture.svg)
+| Capability | Evidence and status |
+| --- | --- |
+| Structured context and bounded planning | **Verified locally:** CLI, schema validation and deterministic Director records. |
+| Guarded source changes | **Verified in the demo:** scoped tasks, hashed changesets, apply and source-freshness checks. |
+| Godot QA and iteration | **Verified in this game:** real scene tests and three playable Windows releases. |
+| Evidence and review | **Verified boundaries:** retained outcomes, failed attempts and explicit review authority. |
+| Native art tools | **Limited verified primitive:** editable Pixelorama round trips; artistic quality still needs review. |
+| General multi-agent production and art planning | **Experimental:** contracts and external integration, not proven unattended production. |
+| Autonomous quality judgment or self-improvement | **Unsupported:** no general evaluator, optimizer or native model-provider host is claimed. |
 
-Solid connections identify implemented coordination interfaces. Dashed connections identify external specialist roles; execution requires an actual host. [Read the boundaries](docs/architecture.md).
+[Capability detail](docs/capabilities.md) · [Verification scope](docs/verification.md)
 
-## Capabilities
+## Applied AI at DTU
 
-| Capability | Status | What the evidence supports |
-| --- | --- | --- |
-| Local CLI and structured project context | **VERIFIED** | Real initialization, validation and diagnostic execution |
-| Authority, source freshness and transaction guards | **VERIFIED — tested boundaries** | Focused automated contract and integrity checks |
-| Director planning and context selection | **VERIFIED — deterministic logic** | Operational planning; not a native LLM agent |
-| External specialist/production workflow | **EXPERIMENTAL** | Task contracts and manual host handoff; fixture proof is labeled |
-| Godot QA integration | **EXPERIMENTAL** | Real native execution exists; project-specific setup is required |
-| Native Pixelorama documents | **VERIFIED — limited primitive** | Real editable-layer round trips; artistic quality is not certified |
-| Scene-First art planning | **EXPERIMENTAL** | Structured composition contracts and technical validation |
-| Autonomous artistic judgment / continual improvement | **UNSUPPORTED** | No verified automatic quality evaluator or optimizer |
-| Fully autonomous end-to-end game production | **UNSUPPORTED** | No claim of an autonomous commercial studio |
+Developed in connection with Applied AI studies at the Technical University of Denmark. This independent student project translates course concepts into inspectable engineering mechanisms:
 
-[Detailed evidence and limits](docs/capabilities.md).
+- **Context engineering:** scoped requirements, decisions and relevant project state.
+- **Harness engineering:** task contracts, tool boundaries, isolation, validation and recovery.
+- **Architecture and evaluation:** specialist responsibilities, observable execution, regression checks and human authority.
 
-## Applied AI foundations
+![Applied AI concepts mapped to GameFactory components](assets/applied-ai-map.svg)
 
-The project translates course ideas into engineering constraints: shared state for context engineering, bounded roles for multi-agent coordination, execution traces for observability, and approval gates for human oversight.
+[View full-size diagram](assets/applied-ai-map.svg) · [Read the existing technical case study](docs/applied-ai-case-study.md), including the earlier Fleet prototype, evaluation dimensions and lessons learned. The private coursework submission is not reproduced; no DTU endorsement is implied.
 
-![Applied AI concepts mapped to components](assets/applied-ai-map.svg)
+## Technical Limitations and Lessons Learned
 
-The original Module 2 report described a Fleet prototype. V2 is a later local implementation; the two are not presented as the same deployed system. The private coursework submission is not reproduced here.
+![Production, evaluation and bounded feedback loop](assets/production-loop.svg)
 
-## Engineering case study
+Role definitions are not proof of agent execution. Fixture tests are not live-tool proof. Technical PASS is not artistic acceptance. The discontinued Star Greenhouse 2 experiment made that last distinction concrete.
 
-[From a course prototype to an evidence-driven development workflow](docs/applied-ai-case-study.md) explains implemented mechanisms, unresolved gaps and lessons from failed production attempts. It separates functional tests from subjective design and art judgments.
+GameFactory coordinates context, tasks, guarded application and evidence. **Codex supplied the implementation, operated tools, reviewed its own work and packaged releases.** General autonomy and subjective quality remain unproven. The retained framework checks cover named lanes; no new full framework regression was run for this presentation.
 
-![Production and evaluation loop](assets/production-loop.svg)
+[View full-size diagram](assets/production-loop.svg) · [Limits and lessons](docs/applied-ai-case-study.md#9-star-greenhouse-2-limitations-and-lessons) · [Restrained future directions](docs/roadmap.md)
 
-## Demonstration
+## GameFactory in Action
 
-![Actual Little Star Jump gameplay](screenshots/gameplay.png)
+### One Game. Three Prompts. Three Iterations.
 
-**Little Star Jump** is the bounded demonstration: one screen, three stars and a goal. [See its actual production provenance and verification status](docs/demo.md). No public download is implied before the separately reviewed demo repository is published.
+*From a simple request to a playable game, then incremental improvements without repeating the original requirements.*
 
-## Limitations and lessons learned
+### 01 — Create
 
-- A documented agent role is not proof of agent execution.
-- Fixture success proves a contract under controlled inputs, not an external tool's live capability.
-- Native asset validation does not establish artistic quality. The Star Greenhouse 2 experiment was discontinued after an unsuccessful visual outcome.
-- Review authority, test evidence and source freshness must remain separate.
-- Broad lifecycle regressions can be expensive; this preview uses explicitly scoped release verification.
+**Exact opening line** — [full original request](examples/little-star-jump/README.md#iteration-01--create).
 
-[Restrained roadmap](docs/roadmap.md).
+> Improve Little Star Jump into a small but polished, complete-feeling 2D pixel-art platformer.
 
-## Commercial availability
+![Actual v0.2.0 gameplay: collect three stars and reach the flag](examples/little-star-jump/media/01-create.gif)
 
-The intended business model is **paid software licensing**. The core is proprietary and **not yet available for general commercial licensing**. This public repository is an engineering showcase, not an open-source framework distribution or a commercial software download.
+*v0.2.0 · Recorded from the preserved Windows release.*
 
-## Author
+A working prototype became a polished miniature platformer: animated pixel scenery, responsive controls, sound, title/pause/victory screens and replay. **29 gameplay checks + 34 rendered checks passed.**
 
-**Burak Yenice**
+[Iteration 01 evidence and playable output](examples/little-star-jump/README.md#iteration-01--create)
 
-Developed in connection with Applied AI studies at DTU. This is an independent student engineering project; no official DTU endorsement is implied.
+### 02 — Improve
 
-Copyright © 2026 Burak Yenice. All rights reserved. See [copyright and scope](COPYRIGHT.md).
+> The jumping feels too floaty. Make it snappier and more responsive.
+
+![Actual v0.2.1 gameplay: tap and held jumps](examples/little-star-jump/media/02-improve.gif)
+
+*v0.2.1 · Tap for a hop; hold for height.*
+
+Stronger gravity and faster falls cut held-jump airtime by **25%: 0.867 → 0.650 seconds**, with almost the same height. The three-star route, coyote time and input buffer stayed intact. **32 gameplay + 37 rendered checks passed.**
+
+[Before/after clips, changed files and evidence](examples/little-star-jump/README.md#iteration-02--improve)
+
+### 03 — Extend
+
+> Add a moving platform that I can jump onto.
+
+![Actual v0.2.2 gameplay: jump onto the moving platform and ride it](examples/little-star-jump/media/03-extend.gif)
+
+*v0.2.2 · Jump aboard; the platform carries the player automatically.*
+
+A moving mossy platform added an optional route to the middle ledge. Boarding, riding through a turnaround, jumping off, pause/restart and the original route were checked. **41 gameplay + 47 rendered checks passed.**
+
+[Iteration 03 evidence and regression checks](examples/little-star-jump/README.md#iteration-03--extend)
+
+**Prompt 1 → Playable Game · Prompt 2 → Improved Jumping · Prompt 3 → Moving Platform**
+
+[Play or inspect all three releases](examples/little-star-jump/SOURCE.md) · [Exact prompts and execution trail](examples/little-star-jump/README.md) · [Media provenance and still-image fallbacks](examples/little-star-jump/MEDIA.md)

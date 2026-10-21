@@ -1,4 +1,8 @@
-# Preview verification
+# Verification scope and results
+
+## Retained framework and prototype release checks
+
+The following checks belong to the earlier prepared release. They were **not rerun** while finalizing the GameFactory Agents presentation. The prototype's 21 gameplay checks below predate the three polished releases documented in the [current case study](../examples/little-star-jump/README.md).
 
 2026-10-21 · Experimental preview · Windows · Node 24.20.0 / pnpm 11.25.0.
 
@@ -20,3 +24,25 @@ Private raw receipts are retained by the owner. Public summaries do not expose c
 ## Independent clone check
 
 The private source candidate was cloned into a new local directory without node_modules. Frozen installation, typecheck, build, actual CLI smoke and 21 bootstrap/filesystem checks passed again. The package download store was reused. The separate demo was also cloned without its engine cache or framework context; fresh native import and all 21 gameplay checks passed. No full framework regression is implied.
+
+## GameFactory Agents presentation checks — 21 October 2026
+
+This pass changed presentation and recorded existing game releases. It did not run new game production, change gameplay or rerun the framework regression suite.
+
+| Check | Actual result |
+| --- | --- |
+| Main README and detailed example | GitHub REST Markdown API rendered both successfully |
+| Local preview of that HTML | PASS in headless Edge at 1280, 390 and 320 pixels; all images loaded, no page overflow; example details expanded |
+| README sequence | PASS; GameFactory in Action is the final main section |
+| Relative files and heading anchors | PASS across the public Markdown documents |
+| Exact prompts and retained outcomes | PASS against the actual Director receipts and versioned demo verification records |
+| Gameplay GIFs | Four actual release recordings; all decoded; sampled content and framing inspected; 936,513 bytes combined |
+| Recorded executable hashes | PASS against the retained release artifact hashes |
+| Public demo release links | All three source tags match the recorded commits; Windows assets are present |
+| Preservation | Three diagrams, Applied AI case study and copyright notice unchanged; core and demo checkouts unchanged |
+| Publication scope | Documentation, diagrams, media and public evidence only; no framework source or new license |
+| Whitespace | git diff --check passed |
+
+[Machine-readable presentation evidence](../examples/little-star-jump/evidence/presentation-checks.json) · [Recording provenance](../examples/little-star-jump/MEDIA.md)
+
+The renderer check used GitHub's Markdown API plus local GitHub-style CSS. It is not a claim that a new showcase repository is already published. Live repository rendering awaits first publication authorization. Review was performed by the same Codex operator; owner visual acceptance remains a manual check.

@@ -1,0 +1,128 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GameFactory Agents — case-study preview</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;color:#1f2328;font:16px/1.55 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}.markdown-body{max-width:980px;margin:32px auto;padding:40px;border:1px solid #d1d9e0;border-radius:8px;overflow-wrap:break-word}h1,h2,h3{line-height:1.25;margin:28px 0 16px;font-weight:600}h1{font-size:32px}h2{font-size:24px;border-bottom:1px solid #d1d9e0;padding-bottom:8px}h3{font-size:20px}h1:first-child{margin-top:0}p,ul,ol,blockquote,table{margin:0 0 16px}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto}blockquote{border-left:4px solid #d1d9e0;padding:0 16px;color:#59636e}table{display:block;max-width:100%;overflow:auto;border-collapse:collapse}th,td{border:1px solid #d1d9e0;padding:8px 12px}th{text-align:left;background:#f6f8fa}tr:nth-child(2n){background:#f6f8fa}code{font-size:85%;background:#eff1f3;padding:2px 4px;border-radius:4px}details{margin-bottom:20px}summary{cursor:pointer;font-weight:600}details[open] summary{margin-bottom:16px}.anchor{display:none}.preview-note{font-size:12px;color:#59636e;margin-bottom:20px}@media(max-width:600px){.markdown-body{margin:0;border:0;border-radius:0;padding:20px}h1{font-size:28px}h2{font-size:23px}h3{font-size:19px}th,td{padding:6px 8px}}</style></head><body><article class="markdown-body"><p class="preview-note">Local preview · GitHub Markdown API output with local GitHub-style CSS · <a href="README.md">README source</a></p><h1>One Game. Three Prompts. Three Iterations.</h1>
+<p><a href="../../README.md">← GameFactory Agents</a> · <a href="SOURCE.md">Source and playable releases</a> · <a href="MEDIA.md">Media provenance</a></p>
+<p>Little Star Jump is a one-screen Godot platformer: three stars unlock a flag, then the player can replay. These three real requests produced v0.2.0, v0.2.1 and v0.2.2. Each follow-up kept the existing game context instead of repeating the original requirements.</p>
+<p>The earlier prototype is preserved separately. The first showcased request explicitly asks to <strong>improve</strong> that prototype; it is not presented as a blank-slate creation prompt.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Stage</th>
+<th>Native scene checks</th>
+<th>Rendered checks</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 · v0.2.0</td>
+<td>29/29</td>
+<td>34/34</td>
+<td>Polished playable game</td>
+</tr>
+<tr>
+<td>02 · v0.2.1</td>
+<td>32/32</td>
+<td>37/37</td>
+<td>25% shorter jump airtime</td>
+</tr>
+<tr>
+<td>03 · v0.2.2</td>
+<td>41/41</td>
+<td>47/47</td>
+<td>Rideable moving platform</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>What GameFactory actually did</h2>
+<p>GameFactory's deterministic CLI selected context, planned bounded tasks, exported external work, validated submitted changesets, applied source changes, ran native QA, tracked evidence and enforced review/handoff boundaries. One external Codex operator authored the code, operated the tools, supplied same-agent review and packaged/published the demo. There was no independent multi-agent execution or autonomous visual acceptance.</p>
+<p>This presentation reuses those completed records. It does not rerun production, add mechanics or invoke a new Director plan. Only demonstration recording and documentation checks were performed for the showcase.</p>
+<h2>Iteration 01 — Create</h2>
+<h3>Exact user prompt</h3>
+<blockquote>
+<p>Improve Little Star Jump into a small but polished, complete-feeling 2D pixel-art platformer.<br>
+Keep the gameplay simple. Focus on visual quality, responsive controls, animations, and overall polish.<br>
+Use GameFactory V2's existing production workflow to plan, implement, evaluate, and deliver the playable game autonomously.<br>
+Preserve the previous working version. Include the original request, actual workflow evidence, and final game output in the GitHub demo case study.</p>
+</blockquote>
+<p><a href="prompts/01.txt">Verbatim text</a>. This is the actual request retained in the execution record, not a rewritten historical quotation. The README quotes only its exact first sentence. “Create” names the first showcased polished output; a working prototype already existed.</p>
+<h3>Result and implementation</h3>
+<p>The polished release evolved from the preserved prototype. It added original procedural pixel art, character/world animation, sound, forgiving controls and the full title → play → pause → victory → replay flow. Its final production pass also corrected headless audio allocation and toast readability.</p>
+<p><strong>Changed files:</strong> <code class="notranslate">project.godot</code>; <code class="notranslate">scripts/main.gd</code>, <code class="notranslate">player.gd</code>, <code class="notranslate">pixel.gd</code>, <code class="notranslate">world.gd</code>, <code class="notranslate">sound.gd</code>; <code class="notranslate">tests/gameplay_test.gd</code>, <code class="notranslate">capture.gd</code> across the polish passes.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="media/01-create.gif"><img src="media/01-create.gif" alt="Actual iteration 01 footage" style="max-width: 100%;"></a></p>
+<p><strong>Verified then:</strong> 29/29 native scene checks and 34/34 rendered checks. The Windows executable was also played through the real flow. These are historical release results, not freshly rerun production or a new framework regression.</p>
+<p><strong>Preserved result:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/tree/v0.2.0">v0.2.0 source</a> · <a href="https://github.com/burakync/gamefactory-demo-platformer/commit/bbf0d01396d831b1bf6bb8223057b733f639c820">commit bbf0d01</a> · <a href="https://github.com/burakync/gamefactory-demo-platformer/releases/tag/v0.2.0">Windows download</a> · <a href="evidence/v0.2.0-verification.json">verification snapshot</a>.</p>
+<details>
+<summary>Prompt → processing → execution → changes → QA → output</summary>
+<ul>
+<li><strong>Processing:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/director-plan.json">Director plan</a> binds the request to scoped work.</li>
+<li><strong>Execution and changed files:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/production-apply.json">guarded production apply</a>; external Codex supplied the code.</li>
+<li><strong>QA:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/qa-run.json">actual run</a> → native run <code class="notranslate">TRUN-9cf20335-4b84-4f5d-a819-268d14ef9584</code> → evidence <code class="notranslate">EVID-0014</code>.</li>
+<li><strong>Review:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/review-ingest.json">same-agent result ingestion</a>; no independent model worker was launched.</li>
+<li><strong>Handoff:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/handoff-create.json">HANDOFF-d79bb4c5-5093-a85a-3067-92fbea7b3050</a> recorded a verified bounded change at that release. Historical freshness must not be read as current-source acceptance after later iterations.</li>
+<li><strong>Output:</strong> versioned source and Windows release above; GIFs were recorded later from the same preserved executable hashes.</li>
+</ul>
+</details>
+<h2>Iteration 02 — Improve</h2>
+<h3>Exact user prompt</h3>
+<blockquote>
+<p>The jumping feels too floaty. Make it snappier and more responsive.</p>
+</blockquote>
+<p><a href="prompts/02.txt">Verbatim text</a>. This is the actual request retained in the execution record, not a rewritten historical quotation.</p>
+<h3>Result and implementation</h3>
+<p>The controller changed ascent gravity from 670 to 1000 px/s², descent gravity to 1500 px/s², launch speed from 285 to 350 px/s and release cutoff from 115 to 100 px/s. Measured airtime fell from 0.867 to 0.650 s; height stayed near 64 pixels. Tests retained the original route, coyote time and buffering.</p>
+<p><strong>Changed files:</strong> <code class="notranslate">scripts/player.gd</code>, <code class="notranslate">tests/gameplay_test.gd</code>, <code class="notranslate">project.godot</code>.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="media/02-improve.gif"><img src="media/02-improve.gif" alt="Actual iteration 02 footage" style="max-width: 100%;"></a></p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Before — v0.2.0</th>
+<th>After — v0.2.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener noreferrer" href="media/02-before.gif"><img src="media/02-before.gif" alt="Before: tap and held jump" style="max-width: 100%;"></a></td>
+<td><a target="_blank" rel="noopener noreferrer" href="media/02-improve.gif"><img src="media/02-improve.gif" alt="After: tap and held jump" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>Both recordings use the same tap-then-held-jump input sequence. These are live recordings, not frame-synchronized laboratory captures. The quantitative timing comes from the retained 60 Hz scene tests.</p>
+<p><strong>Verified then:</strong> 32/32 native scene checks and 37/37 rendered checks. The Windows executable was also played through the real flow. These are historical release results, not freshly rerun production or a new framework regression.</p>
+<p><strong>Preserved result:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/tree/v0.2.1">v0.2.1 source</a> · <a href="https://github.com/burakync/gamefactory-demo-platformer/commit/c9290128fbd6444b36d3def35e2cdf735007b060">commit c929012</a> · <a href="https://github.com/burakync/gamefactory-demo-platformer/releases/tag/v0.2.1">Windows download</a> · <a href="evidence/v0.2.1-verification.json">verification snapshot</a>.</p>
+<details>
+<summary>Prompt → processing → execution → changes → QA → output</summary>
+<ul>
+<li><strong>Processing:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-director-plan.json">Director plan</a> binds the request to scoped work.</li>
+<li><strong>Execution and changed files:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-production-apply.json">guarded production apply</a>; external Codex supplied the code.</li>
+<li><strong>QA:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-qa-run.json">actual run</a> → native run <code class="notranslate">TRUN-34c2e5b7-328f-4671-9aa2-cda19794d5c9</code> → evidence <code class="notranslate">EVID-0015</code>.</li>
+<li><strong>Review:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-review-ingest.json">same-agent result ingestion</a>; no independent model worker was launched.</li>
+<li><strong>Handoff:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-handoff-create.json">HANDOFF-0f3c8fe8-102f-d04f-c9bc-8b2acf6e0da8</a> recorded a verified bounded change at that release. Historical freshness must not be read as current-source acceptance after later iterations.</li>
+<li><strong>Output:</strong> versioned source and Windows release above; GIFs were recorded later from the same preserved executable hashes.</li>
+</ul>
+</details>
+<h2>Iteration 03 — Extend</h2>
+<h3>Exact user prompt</h3>
+<blockquote>
+<p>Add a moving platform that I can jump onto.</p>
+</blockquote>
+<p><a href="prompts/03.txt">Verbatim text</a>. This is the actual request retained in the execution record, not a rewritten historical quotation.</p>
+<h3>Result and implementation</h3>
+<p>A new AnimatableBody2D supplies one-way landing, smooth lateral travel and automatic rider carry. The main scene starts, pauses, stops and resets it. A queued star overlap discovered after restarting from the middle ledge is now rejected using actual collision bounds. The existing player controller is unchanged.</p>
+<p><strong>Changed files:</strong> <code class="notranslate">scripts/moving_platform.gd</code>, <code class="notranslate">scripts/main.gd</code>, <code class="notranslate">tests/gameplay_test.gd</code>, <code class="notranslate">project.godot</code>; generated Godot UID metadata in the delivery checkout.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="media/03-extend.gif"><img src="media/03-extend.gif" alt="Actual iteration 03 footage" style="max-width: 100%;"></a></p>
+<p><strong>Verified then:</strong> 41/41 native scene checks and 47/47 rendered checks. The Windows executable was also played through the real flow. These are historical release results, not freshly rerun production or a new framework regression.</p>
+<p><strong>Preserved result:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/tree/v0.2.2">v0.2.2 source</a> · <a href="https://github.com/burakync/gamefactory-demo-platformer/commit/60c873b82ff07dc2df2e2f1d7292ea92143705fb">commit 60c873b</a> · <a href="https://github.com/burakync/gamefactory-demo-platformer/releases/tag/v0.2.2">Windows download</a> · <a href="evidence/v0.2.2-verification.json">verification snapshot</a>.</p>
+<details>
+<summary>Prompt → processing → execution → changes → QA → output</summary>
+<ul>
+<li><strong>Processing:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-director-plan.json">Director plan</a> binds the request to scoped work.</li>
+<li><strong>Execution and changed files:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-production-apply.json">guarded production apply</a>; external Codex supplied the code.</li>
+<li><strong>QA:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-qa-run.json">actual run</a> → native run <code class="notranslate">TRUN-683ceecf-4d48-40db-b529-b780577a831c</code> → evidence <code class="notranslate">EVID-0016</code>.</li>
+<li><strong>Review:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-review-ingest.json">same-agent result ingestion</a>; no independent model worker was launched.</li>
+<li><strong>Handoff:</strong> <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-handoff-create.json">HANDOFF-f6717127-ccd4-7391-8ebb-801f4ecb18a0</a> recorded a verified bounded change at that release. Historical freshness must not be read as current-source acceptance after later iterations.</li>
+<li><strong>Output:</strong> versioned source and Windows release above; GIFs were recorded later from the same preserved executable hashes.</li>
+</ul>
+</details>
+<h2>Limits and retained failures</h2>
+<p>Passing assertions cover their declared scene flows. Owner enjoyment, artistic approval, subjective audio listening, other operating systems and gamepad/touch were not certified. The Windows executables are unsigned. Framework-wide regression was not rerun for this presentation.</p>
+<p>Failed capture/test attempts remain identified in the demo case studies. The polish work corrected audio cleanup and input-test timing; the jump update first showed the old controller failing the new timing thresholds; the moving-platform update exposed the queued star event after restart. See <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/CASE_STUDY.md">original production case</a>, <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/JUMP_TUNING.md">jump tuning</a> and <a href="https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/MOVING_PLATFORM.md">moving platform</a>.</p>
+<p><a href="evidence/iterations.json">Machine-readable prompt/release/evidence index</a>. Public demo receipts already redact local paths; the proprietary framework source and private coursework stay excluded.</p></article></body></html>

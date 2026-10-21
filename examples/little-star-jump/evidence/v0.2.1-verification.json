@@ -1,0 +1,53 @@
+{
+  "version": "0.2.1",
+  "request": "The jumping feels too floaty. Make it snappier and more responsive.",
+  "canonical": {
+    "production": "PEXEC-206b67b9-dc24-48ad-bf55-1bf9321f077a",
+    "qa": "QEXEC-3fc5be49-989c-49ab-a0fb-c6adb231e243",
+    "test_run": "TRUN-34c2e5b7-328f-4671-9aa2-cda19794d5c9",
+    "evidence": "EVID-0015",
+    "result": "PASS",
+    "assertions": 32,
+    "handoff": "HANDOFF-0f3c8fe8-102f-d04f-c9bc-8b2acf6e0da8",
+    "freshness": "CURRENT"
+  },
+  "rendered": {
+    "result": "PASS",
+    "assertions": 37
+  },
+  "measurements": {
+    "before": {
+      "rise_seconds": 0.433333333333333,
+      "air_seconds": 0.866666666666667,
+      "height_pixels": 63.088653564453
+    },
+    "after": {
+      "rise_seconds": 0.366666666666667,
+      "air_seconds": 0.65,
+      "height_pixels": 64.241638183594
+    }
+  },
+  "desktop": {
+    "method": "Guarded physical-key input in exported Windows game",
+    "observed": "Three stars and earned victory visually inspected",
+    "stderr_empty": true
+  },
+  "artifacts": [
+    {
+      "name": "LittleStarJump.exe",
+      "bytes": 109379376,
+      "sha256": "sha256:b370b9a354d08b735d4371f1c546f3defd3ab5811abb1591de54904856d9172a"
+    },
+    {
+      "name": "Little-Star-Jump-0.2.1-Windows.zip",
+      "bytes": 39315442,
+      "sha256": "sha256:1432fed99f125f9c06fea74b74296ab160bc0ba2be557bb2d7889e2af08e9151"
+    }
+  ],
+  "limitations": [
+    "Same-agent review; subjective owner feel remains untested.",
+    "macOS/Linux, gamepad/touch and subjective audio listening NOT_TESTED.",
+    "No framework core changes; full framework regression NOT_RUN."
+  ],
+  "previous_verification": "verification-v0.2.0.json"
+}

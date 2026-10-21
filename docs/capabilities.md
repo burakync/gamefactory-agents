@@ -7,8 +7,8 @@
 | Context initialization, CLI, schema validation | Fresh real CLI processes | VERIFIED locally |
 | Commit Gate, immutable history, recovery and freshness | Automated boundary tests; retained earlier lifecycle evidence | VERIFIED for tested boundaries; no universal deployment claim |
 | Director/context bundles/routing | Actual deterministic services and tests | VERIFIED logic; agent execution remains separate |
-| Specialists, source ChangeSets and review orchestration | Manual external contract plus deterministic fixtures | EXPERIMENTAL end to end |
-| Native Godot tests | Actual engine execution in isolated projects | EXPERIMENTAL adapter workflow; runnable demo proof separately reported |
+| Specialists, source ChangeSets and review orchestration | Real external Codex submissions, guarded applies and retained review receipts across three demo releases | VERIFIED in this bounded example; general autonomy remains EXPERIMENTAL |
+| Native Godot tests | Actual engine execution in isolated projects | VERIFIED actual-scene checks in three demo releases; broader adapter support remains EXPERIMENTAL |
 | Pixelorama native document bridge | Retained real editor create/edit/reopen/export experiment | VERIFIED narrow document primitive; no native editor bundled |
 | Scene-First art | Planning records, geometry and technical validation | EXPERIMENTAL; not an autonomous art director |
 | Five evaluation dimensions | Course rubric and partial technical checks | EXPERIMENTAL rubric; automated aggregate scoring UNSUPPORTED |
@@ -17,4 +17,4 @@
 
 Star Greenhouse 2 was not a successful production result. Editable files and narrow tests existed, but the visual result did not satisfy the owner. That distinction is the main production lesson, not a benchmark of autonomous quality. No greenhouse art, source or private logs are distributed here.
 
-Fresh release checks and omitted suites are listed in [verification](verification.md). The demonstration describes only the actual tools and workers that ran.
+Retained release checks, current presentation checks and omitted suites are listed in [verification](verification.md). The demonstration describes only the actual tools and workers that ran.

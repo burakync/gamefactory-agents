@@ -1,0 +1,217 @@
+[
+  {
+    "iteration": 1,
+    "version": "0.2.0",
+    "tag": "v0.2.0",
+    "commit": "bbf0d01396d831b1bf6bb8223057b733f639c820",
+    "prompt": "Improve Little Star Jump into a small but polished, complete-feeling 2D pixel-art platformer.\nKeep the gameplay simple. Focus on visual quality, responsive controls, animations, and overall polish.\nUse GameFactory V2's existing production workflow to plan, implement, evaluate, and deliver the playable game autonomously.\nPreserve the previous working version. Include the original request, actual workflow evidence, and final game output in the GitHub demo case study.",
+    "prompt_sha256": "bc989df439034eb4a2fd9780813ecc65e716895a01f04acb883f0b6e4e86150b",
+    "verification": {
+      "version": "0.2.0",
+      "date": "2026-10-21",
+      "engine": "Godot 4.7.2",
+      "platform": "Windows x64 / OpenGL compatibility",
+      "canonical": {
+        "production": "PEXEC-f085538a-40cf-44a1-9061-f0668c2887d3",
+        "qa": "QEXEC-2585960f-ad42-46aa-865c-b96518cca2c3",
+        "test_run": "TRUN-9cf20335-4b84-4f5d-a819-268d14ef9584",
+        "evidence": "EVID-0014",
+        "result": "PASS",
+        "assertions": 29,
+        "stderr": "",
+        "handoff": "HANDOFF-d79bb4c5-5093-a85a-3067-92fbea7b3050",
+        "freshness": "CURRENT"
+      },
+      "rendered": {
+        "result": "PASS",
+        "assertions": 34,
+        "native_errors": false
+      },
+      "desktop": {
+        "kind": "Actual exported Windows executable",
+        "method": "Guarded foreground Win32 keyboard events with physical scan codes; pixel captures inspected by the same Codex operator.",
+        "build_sha256": "sha256:066f120f47d814f4ba6f8b8c6c3340f3200debf78b559141964616837791d0e2",
+        "observed": [
+          "Title starts",
+          "First star and first platform",
+          "Three-star earned victory",
+          "Enter replays and resets stars",
+          "Escape pauses",
+          "Enter resumes",
+          "M changes sound indicator to OFF"
+        ],
+        "stderr_empty": true,
+        "independent_review": false,
+        "subjective_audio_listening": "NOT_TESTED"
+      },
+      "artifacts": [
+        {
+          "name": "LittleStarJump.exe",
+          "bytes": 109377920,
+          "sha256": "sha256:066f120f47d814f4ba6f8b8c6c3340f3200debf78b559141964616837791d0e2"
+        },
+        {
+          "name": "Little-Star-Jump-0.2.0-Windows.zip",
+          "bytes": 39314966,
+          "sha256": "sha256:83313ffb77fd4fef0bb6b738ab05974003944f4eca560c2493ee19413e07de26"
+        },
+        {
+          "name": "previous-working-version.zip",
+          "bytes": 80947,
+          "sha256": "sha256:290a2f4eb5d3c0c60f65cefb59dd78db013b86238be87346d650a6b2b911d54a"
+        }
+      ],
+      "limitations": [
+        "Same-agent self-review, not human visual acceptance.",
+        "Subjective audio listening NOT_TESTED.",
+        "macOS/Linux and gamepad/touch NOT_TESTED.",
+        "Full framework regression NOT_RUN; no core changes were made.",
+        "Framework handoff certifies a bounded change, not general project release readiness."
+      ],
+      "clean_source_archive": {
+        "commit": "9f9c591",
+        "import": "PASS",
+        "native_assertions": 29,
+        "result": "PASS",
+        "native_errors": false,
+        "framework_context_copied": false
+      }
+    },
+    "links": {
+      "director-plan": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/director-plan.json",
+      "production-apply": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/production-apply.json",
+      "qa-run": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/qa-run.json",
+      "review-ingest": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/review-ingest.json",
+      "handoff-create": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/handoff-create.json"
+    }
+  },
+  {
+    "iteration": 2,
+    "version": "0.2.1",
+    "tag": "v0.2.1",
+    "commit": "c9290128fbd6444b36d3def35e2cdf735007b060",
+    "prompt": "The jumping feels too floaty. Make it snappier and more responsive.",
+    "prompt_sha256": "446627b00419d1615fbb348bbe48623aa33a3897133d57665cdf251da8631f87",
+    "verification": {
+      "version": "0.2.1",
+      "request": "The jumping feels too floaty. Make it snappier and more responsive.",
+      "canonical": {
+        "production": "PEXEC-206b67b9-dc24-48ad-bf55-1bf9321f077a",
+        "qa": "QEXEC-3fc5be49-989c-49ab-a0fb-c6adb231e243",
+        "test_run": "TRUN-34c2e5b7-328f-4671-9aa2-cda19794d5c9",
+        "evidence": "EVID-0015",
+        "result": "PASS",
+        "assertions": 32,
+        "handoff": "HANDOFF-0f3c8fe8-102f-d04f-c9bc-8b2acf6e0da8",
+        "freshness": "CURRENT"
+      },
+      "rendered": {
+        "result": "PASS",
+        "assertions": 37
+      },
+      "measurements": {
+        "before": {
+          "rise_seconds": 0.433333333333333,
+          "air_seconds": 0.866666666666667,
+          "height_pixels": 63.088653564453
+        },
+        "after": {
+          "rise_seconds": 0.366666666666667,
+          "air_seconds": 0.65,
+          "height_pixels": 64.241638183594
+        }
+      },
+      "desktop": {
+        "method": "Guarded physical-key input in exported Windows game",
+        "observed": "Three stars and earned victory visually inspected",
+        "stderr_empty": true
+      },
+      "artifacts": [
+        {
+          "name": "LittleStarJump.exe",
+          "bytes": 109379376,
+          "sha256": "sha256:b370b9a354d08b735d4371f1c546f3defd3ab5811abb1591de54904856d9172a"
+        },
+        {
+          "name": "Little-Star-Jump-0.2.1-Windows.zip",
+          "bytes": 39315442,
+          "sha256": "sha256:1432fed99f125f9c06fea74b74296ab160bc0ba2be557bb2d7889e2af08e9151"
+        }
+      ],
+      "limitations": [
+        "Same-agent review; subjective owner feel remains untested.",
+        "macOS/Linux, gamepad/touch and subjective audio listening NOT_TESTED.",
+        "No framework core changes; full framework regression NOT_RUN."
+      ],
+      "previous_verification": "verification-v0.2.0.json"
+    },
+    "links": {
+      "director-plan": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-director-plan.json",
+      "production-apply": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-production-apply.json",
+      "qa-run": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-qa-run.json",
+      "review-ingest": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-review-ingest.json",
+      "handoff-create": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.1/docs/evidence/snap-handoff-create.json"
+    }
+  },
+  {
+    "iteration": 3,
+    "version": "0.2.2",
+    "tag": "v0.2.2",
+    "commit": "60c873b82ff07dc2df2e2f1d7292ea92143705fb",
+    "prompt": "Add a moving platform that I can jump onto.",
+    "prompt_sha256": "cf808b598efc3658dcbb1fcfe6b9e6292e06c1be3a4d6591159c0c5c66df2564",
+    "verification": {
+      "version": "0.2.2",
+      "request": "Add a moving platform that I can jump onto.",
+      "canonical": {
+        "production": "PEXEC-0b7401a4-dbb4-401e-bcd2-335e4ba49d4b",
+        "qa": "QEXEC-b67f67d0-ac6b-4e8c-8192-483b76631872",
+        "test_run": "TRUN-683ceecf-4d48-40db-b529-b780577a831c",
+        "evidence": "EVID-0016",
+        "result": "PASS",
+        "assertions": 41,
+        "handoff": "HANDOFF-f6717127-ccd4-7391-8ebb-801f4ecb18a0",
+        "freshness": "CURRENT"
+      },
+      "rendered": {
+        "result": "PASS",
+        "assertions": 47
+      },
+      "desktop": {
+        "method": "Guarded physical-key input in exported Windows game; captures visually inspected",
+        "observed": [
+          "Board from floor",
+          "Rider carried left without movement input",
+          "Restart while riding returns player to spawn with zero stars",
+          "Original three-star route completes to victory"
+        ],
+        "stderr_empty": true
+      },
+      "artifacts": [
+        {
+          "name": "LittleStarJump.exe",
+          "bytes": 109390088,
+          "sha256": "sha256:024d1bd7aa5a2ac05bf9d93e9641538fa30533558008fc98ffb3c2b53dc4a0cb"
+        },
+        {
+          "name": "Little-Star-Jump-0.2.2-Windows.zip",
+          "bytes": 39318690,
+          "sha256": "sha256:d3e66cdaa0898e709d24bbcca3849815747d623893d17b22f9043548dcbe2770"
+        }
+      ],
+      "limitations": [
+        "Same-agent review; owner feel remains a manual check.",
+        "macOS/Linux, gamepad/touch and subjective audio listening NOT_TESTED.",
+        "No framework core changes; full framework regression NOT_RUN."
+      ],
+      "previous_verification": "verification-v0.2.1.json"
+    },
+    "links": {
+      "director-plan": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-director-plan.json",
+      "production-apply": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-production-apply.json",
+      "qa-run": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-qa-run.json",
+      "review-ingest": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-review-ingest.json",
+      "handoff-create": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.2/docs/evidence/platform-handoff-create.json"
+    }
+  }
+]

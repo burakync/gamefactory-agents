@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-21",
+  "engine": "Godot 4.7.2",
+  "platform": "Windows x64 / OpenGL compatibility",
+  "canonical": {
+    "production": "PEXEC-f085538a-40cf-44a1-9061-f0668c2887d3",
+    "qa": "QEXEC-2585960f-ad42-46aa-865c-b96518cca2c3",
+    "test_run": "TRUN-9cf20335-4b84-4f5d-a819-268d14ef9584",
+    "evidence": "EVID-0014",
+    "result": "PASS",
+    "assertions": 29,
+    "stderr": "",
+    "handoff": "HANDOFF-d79bb4c5-5093-a85a-3067-92fbea7b3050",
+    "freshness": "CURRENT"
+  },
+  "rendered": {
+    "result": "PASS",
+    "assertions": 34,
+    "native_errors": false
+  },
+  "desktop": {
+    "kind": "Actual exported Windows executable",
+    "method": "Guarded foreground Win32 keyboard events with physical scan codes; pixel captures inspected by the same Codex operator.",
+    "build_sha256": "sha256:066f120f47d814f4ba6f8b8c6c3340f3200debf78b559141964616837791d0e2",
+    "observed": [
+      "Title starts",
+      "First star and first platform",
+      "Three-star earned victory",
+      "Enter replays and resets stars",
+      "Escape pauses",
+      "Enter resumes",
+      "M changes sound indicator to OFF"
+    ],
+    "stderr_empty": true,
+    "independent_review": false,
+    "subjective_audio_listening": "NOT_TESTED"
+  },
+  "artifacts": [
+    {
+      "name": "LittleStarJump.exe",
+      "bytes": 109377920,
+      "sha256": "sha256:066f120f47d814f4ba6f8b8c6c3340f3200debf78b559141964616837791d0e2"
+    },
+    {
+      "name": "Little-Star-Jump-0.2.0-Windows.zip",
+      "bytes": 39314966,
+      "sha256": "sha256:83313ffb77fd4fef0bb6b738ab05974003944f4eca560c2493ee19413e07de26"
+    },
+    {
+      "name": "previous-working-version.zip",
+      "bytes": 80947,
+      "sha256": "sha256:290a2f4eb5d3c0c60f65cefb59dd78db013b86238be87346d650a6b2b911d54a"
+    }
+  ],
+  "limitations": [
+    "Same-agent self-review, not human visual acceptance.",
+    "Subjective audio listening NOT_TESTED.",
+    "macOS/Linux and gamepad/touch NOT_TESTED.",
+    "Full framework regression NOT_RUN; no core changes were made.",
+    "Framework handoff certifies a bounded change, not general project release readiness."
+  ],
+  "clean_source_archive": {
+    "commit": "9f9c591",
+    "import": "PASS",
+    "native_assertions": 29,
+    "result": "PASS",
+    "native_errors": false,
+    "framework_context_copied": false
+  }
+}

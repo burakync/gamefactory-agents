@@ -1,0 +1,46 @@
+{
+  "version": "0.2.2",
+  "request": "Add a moving platform that I can jump onto.",
+  "canonical": {
+    "production": "PEXEC-0b7401a4-dbb4-401e-bcd2-335e4ba49d4b",
+    "qa": "QEXEC-b67f67d0-ac6b-4e8c-8192-483b76631872",
+    "test_run": "TRUN-683ceecf-4d48-40db-b529-b780577a831c",
+    "evidence": "EVID-0016",
+    "result": "PASS",
+    "assertions": 41,
+    "handoff": "HANDOFF-f6717127-ccd4-7391-8ebb-801f4ecb18a0",
+    "freshness": "CURRENT"
+  },
+  "rendered": {
+    "result": "PASS",
+    "assertions": 47
+  },
+  "desktop": {
+    "method": "Guarded physical-key input in exported Windows game; captures visually inspected",
+    "observed": [
+      "Board from floor",
+      "Rider carried left without movement input",
+      "Restart while riding returns player to spawn with zero stars",
+      "Original three-star route completes to victory"
+    ],
+    "stderr_empty": true
+  },
+  "artifacts": [
+    {
+      "name": "LittleStarJump.exe",
+      "bytes": 109390088,
+      "sha256": "sha256:024d1bd7aa5a2ac05bf9d93e9641538fa30533558008fc98ffb3c2b53dc4a0cb"
+    },
+    {
+      "name": "Little-Star-Jump-0.2.2-Windows.zip",
+      "bytes": 39318690,
+      "sha256": "sha256:d3e66cdaa0898e709d24bbcca3849815747d623893d17b22f9043548dcbe2770"
+    }
+  ],
+  "limitations": [
+    "Same-agent review; owner feel remains a manual check.",
+    "macOS/Linux, gamepad/touch and subjective audio listening NOT_TESTED.",
+    "No framework core changes; full framework regression NOT_RUN."
+  ],
+  "previous_verification": "verification-v0.2.1.json"
+}

@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-21",
+  "clips": [
+    {
+      "clip": "create",
+      "version": "0.2.0",
+      "executable_sha256": "066f120f47d814f4ba6f8b8c6c3340f3200debf78b559141964616837791d0e2",
+      "recording_sha256": "0210cbc395e9228ded3af01c62381e09653513fc66ff77c4b54fa05023e4ddaf",
+      "capture_method": "Live exported Godot release; physical keyboard input; foreground-guarded client-area desktop recording",
+      "source_probe": {
+        "width": 960,
+        "height": 540,
+        "duration": "8.000000",
+        "nb_frames": "160"
+      },
+      "gif": {
+        "path": "media/01-create.gif",
+        "sha256": "7b5b54cb299a7ce83af0c73d832d3652c9c57aaa2560f8c1f2d96a513d8450a5",
+        "bytes": 338361,
+        "width": 480,
+        "height": 270,
+        "fps": 15
+      },
+      "processing": "Client-area capture, nearest-neighbor downscale, 128-color GIF palette; no composited or generated gameplay. No gameplay code changed.",
+      "visual_review": {
+        "result": "PASS",
+        "reviewer": "Same Codex operator",
+        "method": "Inspected contact sheets sampled from actual recordings at 2 fps; GIF decoding checked separately.",
+        "observed": "Three stars collected, flag reached, victory displayed.",
+        "scope": "Content and framing check, not independent evaluation or owner artistic acceptance."
+      },
+      "still": {
+        "path": "media/01-create.png",
+        "sha256": "fef84e65c481cba1cca412fe713bf99029bc47f5c0d70408c0ce470bb95a7fcc"
+      }
+    },
+    {
+      "clip": "before",
+      "version": "0.2.0",
+      "executable_sha256": "066f120f47d814f4ba6f8b8c6c3340f3200debf78b559141964616837791d0e2",
+      "recording_sha256": "fae2c83f7856fe87e31fd5142999a95d954fb4b5ba1877abeecc369b7a7acc9c",
+      "capture_method": "Live exported Godot release; physical keyboard input; foreground-guarded client-area desktop recording",
+      "source_probe": {
+        "width": 960,
+        "height": 540,
+        "duration": "4.000000",
+        "nb_frames": "80"
+      },
+      "gif": {
+        "path": "media/02-before.gif",
+        "sha256": "24edd34863a2b01c789e6d15816f249624279346138443a68865b5a4e38741c5",
+        "bytes": 117024,
+        "width": 480,
+        "height": 270,
+        "fps": 15
+      },
+      "processing": "Client-area capture, nearest-neighbor downscale, 128-color GIF palette; no composited or generated gameplay. No gameplay code changed.",
+      "visual_review": {
+        "result": "PASS",
+        "reviewer": "Same Codex operator",
+        "method": "Inspected contact sheets sampled from actual recordings at 2 fps; GIF decoding checked separately.",
+        "observed": "Short tap and held jump shown on v0.2.0.",
+        "scope": "Content and framing check, not independent evaluation or owner artistic acceptance."
+      },
+      "still": {
+        "path": "media/02-before.png",
+        "sha256": "f59e7b254221d56c69c3ff34daab134c973bea6f7e08ddd9a02e18976066c669"
+      }
+    },
+    {
+      "clip": "after",
+      "version": "0.2.1",
+      "executable_sha256": "b370b9a354d08b735d4371f1c546f3defd3ab5811abb1591de54904856d9172a",
+      "recording_sha256": "c18f0c7c3e30268cf718da8f7138bdee6a43a0f260c3920e59847a8a6c7a0895",
+      "capture_method": "Live exported Godot release; physical keyboard input; foreground-guarded client-area desktop recording",
+      "source_probe": {
+        "width": 960,
+        "height": 540,
+        "duration": "4.000000",
+        "nb_frames": "80"
+      },
+      "gif": {
+        "path": "media/02-improve.gif",
+        "sha256": "a018f19f1ca9d47362d5f7c84aea43c18fdc31a5ecb379a00573ff5b9ebc230c",
+        "bytes": 182657,
+        "width": 480,
+        "height": 270,
+        "fps": 15
+      },
+      "processing": "Client-area capture, nearest-neighbor downscale, 128-color GIF palette; no composited or generated gameplay. No gameplay code changed.",
+      "visual_review": {
+        "result": "PASS",
+        "reviewer": "Same Codex operator",
+        "method": "Inspected contact sheets sampled from actual recordings at 2 fps; GIF decoding checked separately.",
+        "observed": "Short tap and held jump shown on v0.2.1; faster return visible.",
+        "scope": "Content and framing check, not independent evaluation or owner artistic acceptance."
+      },
+      "still": {
+        "path": "media/02-improve.png",
+        "sha256": "547380315f2a0cf15a34e397e840f70c9323220aa96f87233187f731d1ee05bc"
+      }
+    },
+    {
+      "clip": "platform",
+      "version": "0.2.2",
+      "executable_sha256": "024d1bd7aa5a2ac05bf9d93e9641538fa30533558008fc98ffb3c2b53dc4a0cb",
+      "recording_sha256": "577dbb392cbf60d34c3553b7aa7762b1feef68f83cdfb5acd99e91516ff061b6",
+      "capture_method": "Live exported Godot release; physical keyboard input; foreground-guarded client-area desktop recording",
+      "source_probe": {
+        "width": 960,
+        "height": 540,
+        "duration": "7.000000",
+        "nb_frames": "140"
+      },
+      "gif": {
+        "path": "media/03-extend.gif",
+        "sha256": "0b9c31b01e9b7e78cb50cc1f03865820306939436e1d64ff1b5955610a150d25",
+        "bytes": 298471,
+        "width": 480,
+        "height": 270,
+        "fps": 15
+      },
+      "processing": "Client-area capture, nearest-neighbor downscale, 128-color GIF palette; no composited or generated gameplay. No gameplay code changed.",
+      "visual_review": {
+        "result": "PASS",
+        "reviewer": "Same Codex operator",
+        "method": "Inspected contact sheets sampled from actual recordings at 2 fps; GIF decoding checked separately.",
+        "observed": "Player jumps onto the moving platform and remains carried through its travel and turnarounds.",
+        "scope": "Content and framing check, not independent evaluation or owner artistic acceptance."
+      },
+      "still": {
+        "path": "media/03-extend.png",
+        "sha256": "744fd9732dd747bb8104d3a43797c121ae1fd9d417ea694bd9a50c694f4d1320"
+      }
+    }
+  ]
+}

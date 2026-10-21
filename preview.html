@@ -1,1 +1,95 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GameFactory V2 — showcase review</title><style>*{box-sizing:border-box}body{margin:0;background:#0c1420;color:#dce6f0;font:17px/1.65 system-ui,Arial,sans-serif}main{max-width:1040px;margin:auto;padding:50px 34px 80px}h1{font-size:54px;letter-spacing:-2px;margin:0}h2{font-size:29px;border-top:1px solid #29384d;padding-top:30px;margin-top:48px}h3{font-size:21px;font-weight:500;color:#aabed1}p{max-width:900px}a{color:#7ce0bd;text-decoration:none}a:hover{text-decoration:underline}strong{color:#f0f5fa}img{display:block;max-width:100%;width:560px;margin:30px auto;border-radius:16px}table{border-collapse:collapse;width:100%;font-size:15px}td{padding:12px;border:1px solid #304158;vertical-align:top}tr:first-child{font-weight:700;background:#1b2a3c}.table{overflow-x:auto}li{margin:12px 0}code{font-size:.9em;background:#1b2a3c;padding:2px 5px;border-radius:4px}footer{margin-top:50px;color:#91a6bc;font-size:13px}@media(max-width:600px){main{padding:28px 18px}h1{font-size:40px}body{font-size:16px}h2{font-size:24px}td{min-width:115px;font-size:13px;padding:9px}}</style><main><h1>GameFactory V2</h1><h3>An experimental multi-agent framework for AI-assisted game development</h3><p>GameFactory organizes game-development work around shared context, bounded tasks, verifiable outputs and explicit human decisions.</p><p><strong>Burak Yenice</strong> · Applied AI studies at the <strong>Technical University of Denmark (DTU)</strong> · Proprietary core · Experimental preview</p><p><a href="docs/architecture.md">Architecture</a> · <a href="docs/applied-ai-case-study.md">Applied AI case study</a> · <a href="docs/demo.md">Demonstration</a> · <a href="docs/verification.md">Verification</a></p><p><img alt="GameFactory: Context, execution and evidence" src="assets/hero.svg"></p><h2>The problem</h2><p>A useful AI-generated change can still break a game. Requirements are scattered across conversations, agents lose decisions during handoffs, and a successful command may be mistaken for a successful product. Without traceable context and evaluation, iteration becomes difficult to explain or reproduce.</p><h2>The approach</h2><p>GameFactory treats AI-assisted development as a controlled workflow. A Director selects relevant context and specialist responsibilities. External workers receive bounded tasks. Source changes, tests and review remain separate steps, with human approval for material decisions.</p><p>The implemented Director is deterministic orchestration. Role definitions and external task contracts do not imply that autonomous model workers are running.</p><h2>Architecture</h2><p><img alt="Conceptual roles and implemented coordination" src="assets/architecture.svg"></p><p>Solid connections identify implemented coordination interfaces. Dashed connections identify external specialist roles; execution requires an actual host. <a href="docs/architecture.md">Read the boundaries</a>.</p><h2>Capabilities</h2><div class="table"><table><tr><td>Capability</td><td>Status</td><td>What the evidence supports</td></tr><tr><td>Local CLI and structured project context</td><td><strong>VERIFIED</strong></td><td>Real initialization, validation and diagnostic execution</td></tr><tr><td>Authority, source freshness and transaction guards</td><td><strong>VERIFIED — tested boundaries</strong></td><td>Focused automated contract and integrity checks</td></tr><tr><td>Director planning and context selection</td><td><strong>VERIFIED — deterministic logic</strong></td><td>Operational planning; not a native LLM agent</td></tr><tr><td>External specialist/production workflow</td><td><strong>EXPERIMENTAL</strong></td><td>Task contracts and manual host handoff; fixture proof is labeled</td></tr><tr><td>Godot QA integration</td><td><strong>EXPERIMENTAL</strong></td><td>Real native execution exists; project-specific setup is required</td></tr><tr><td>Native Pixelorama documents</td><td><strong>VERIFIED — limited primitive</strong></td><td>Real editable-layer round trips; artistic quality is not certified</td></tr><tr><td>Scene-First art planning</td><td><strong>EXPERIMENTAL</strong></td><td>Structured composition contracts and technical validation</td></tr><tr><td>Autonomous artistic judgment / continual improvement</td><td><strong>UNSUPPORTED</strong></td><td>No verified automatic quality evaluator or optimizer</td></tr><tr><td>Fully autonomous end-to-end game production</td><td><strong>UNSUPPORTED</strong></td><td>No claim of an autonomous commercial studio</td></tr></table></div><p><a href="docs/capabilities.md">Detailed evidence and limits</a>.</p><h2>Applied AI foundations</h2><p>The project translates course ideas into engineering constraints: shared state for context engineering, bounded roles for multi-agent coordination, execution traces for observability, and approval gates for human oversight.</p><p><img alt="Applied AI concepts mapped to components" src="assets/applied-ai-map.svg"></p><p>The original Module 2 report described a Fleet prototype. V2 is a later local implementation; the two are not presented as the same deployed system. The private coursework submission is not reproduced here.</p><h2>Engineering case study</h2><p><a href="docs/applied-ai-case-study.md">From a course prototype to an evidence-driven development workflow</a> explains implemented mechanisms, unresolved gaps and lessons from failed production attempts. It separates functional tests from subjective design and art judgments.</p><p><img alt="Production and evaluation loop" src="assets/production-loop.svg"></p><h2>Demonstration</h2><p><img alt="Actual Little Star Jump gameplay" src="screenshots/gameplay.png"></p><p><strong>Little Star Jump</strong> is the bounded demonstration: one screen, three stars and a goal. <a href="docs/demo.md">See its actual production provenance and verification status</a>. No public download is implied before the separately reviewed demo repository is published.</p><h2>Limitations and lessons learned</h2><ul><li>A documented agent role is not proof of agent execution.</li><li>Fixture success proves a contract under controlled inputs, not an external tool's live capability.</li><li>Native asset validation does not establish artistic quality. The Star Greenhouse 2 experiment was discontinued after an unsuccessful visual outcome.</li><li>Review authority, test evidence and source freshness must remain separate.</li><li>Broad lifecycle regressions can be expensive; this preview uses explicitly scoped release verification.</li></ul><p><a href="docs/roadmap.md">Restrained roadmap</a>.</p><h2>Commercial availability</h2><p>The intended business model is <strong>paid software licensing</strong>. The core is proprietary and <strong>not yet available for general commercial licensing</strong>. This public repository is an engineering showcase, not an open-source framework distribution or a commercial software download.</p><h2>Author</h2><p><strong>Burak Yenice</strong></p><p>Developed in connection with Applied AI studies at DTU. This is an independent student engineering project; no official DTU endorsement is implied.</p><p>Copyright © 2026 Burak Yenice. All rights reserved. See <a href="COPYRIGHT.md">copyright and scope</a>.</p><footer>Local review of README.md. No repository or release has been published.</footer></main></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GameFactory Agents — showcase preview</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;color:#1f2328;font:16px/1.55 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}.markdown-body{max-width:980px;margin:32px auto;padding:40px;border:1px solid #d1d9e0;border-radius:8px;overflow-wrap:break-word}h1,h2,h3{line-height:1.25;margin:28px 0 16px;font-weight:600}h1{font-size:32px}h2{font-size:24px;border-bottom:1px solid #d1d9e0;padding-bottom:8px}h3{font-size:20px}h1:first-child{margin-top:0}p,ul,ol,blockquote,table{margin:0 0 16px}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto}blockquote{border-left:4px solid #d1d9e0;padding:0 16px;color:#59636e}table{display:block;max-width:100%;overflow:auto;border-collapse:collapse}th,td{border:1px solid #d1d9e0;padding:8px 12px}th{text-align:left;background:#f6f8fa}tr:nth-child(2n){background:#f6f8fa}code{font-size:85%;background:#eff1f3;padding:2px 4px;border-radius:4px}details{margin-bottom:20px}summary{cursor:pointer;font-weight:600}details[open] summary{margin-bottom:16px}.anchor{display:none}.preview-note{font-size:12px;color:#59636e;margin-bottom:20px}@media(max-width:600px){.markdown-body{margin:0;border:0;border-radius:0;padding:20px}h1{font-size:28px}h2{font-size:23px}h3{font-size:19px}th,td{padding:6px 8px}}</style></head><body><article class="markdown-body"><p class="preview-note">Local preview · GitHub Markdown API output with local GitHub-style CSS · <a href="README.md">README source</a></p><h1>GameFactory Agents</h1>
+<h3>From game-development intent to inspectable, playable results.</h3>
+<p><strong>Burak Yenice</strong> · <strong>GameFactory V2</strong> · Applied AI at <strong>DTU</strong> · Proprietary framework</p>
+<p><a href="docs/architecture.md">Architecture</a> · <a href="docs/applied-ai-case-study.md">Applied AI case study</a> · <a href="examples/little-star-jump/README.md">Three real iterations</a> · <a href="examples/little-star-jump/SOURCE.md">Play the demo</a></p>
+<h2>What is GameFactory?</h2>
+<p>GameFactory is an experimental framework for AI-assisted game development. It organizes requirements, bounded tasks, source changes, tests and review around shared project context—so an iteration can be traced from the owner's request to a working result.</p>
+<p>This repository is a product showcase, technical portfolio and Applied AI case study. The framework core is proprietary and excluded. Commercial licensing is not yet generally available. <a href="COPYRIGHT.md">Copyright and scope</a>.</p>
+<h2>Multi-Agent Architecture</h2>
+<p><a target="_blank" rel="noopener noreferrer" href="assets/architecture.svg"><img src="assets/architecture.svg" alt="GameFactory roles, shared context and implemented coordination" style="max-width: 100%;"></a></p>
+<p>The Director selects context and routes specialist responsibilities. Game Design, Development, Art and QA are distinct roles; their contracts are implemented, while execution requires an external host. <strong>The Director is deterministic orchestration, not an LLM.</strong> The demonstration below used one external Codex operator, with same-agent review—not an independent agent swarm.</p>
+<p><a href="assets/architecture.svg">View full-size diagram</a> · <a href="docs/architecture.md">Architecture and execution boundaries</a></p>
+<h2>Core Capabilities</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Capability</th>
+<th>Evidence and status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structured context and bounded planning</td>
+<td><strong>Verified locally:</strong> CLI, schema validation and deterministic Director records.</td>
+</tr>
+<tr>
+<td>Guarded source changes</td>
+<td><strong>Verified in the demo:</strong> scoped tasks, hashed changesets, apply and source-freshness checks.</td>
+</tr>
+<tr>
+<td>Godot QA and iteration</td>
+<td><strong>Verified in this game:</strong> real scene tests and three playable Windows releases.</td>
+</tr>
+<tr>
+<td>Evidence and review</td>
+<td><strong>Verified boundaries:</strong> retained outcomes, failed attempts and explicit review authority.</td>
+</tr>
+<tr>
+<td>Native art tools</td>
+<td><strong>Limited verified primitive:</strong> editable Pixelorama round trips; artistic quality still needs review.</td>
+</tr>
+<tr>
+<td>General multi-agent production and art planning</td>
+<td><strong>Experimental:</strong> contracts and external integration, not proven unattended production.</td>
+</tr>
+<tr>
+<td>Autonomous quality judgment or self-improvement</td>
+<td><strong>Unsupported:</strong> no general evaluator, optimizer or native model-provider host is claimed.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p><a href="docs/capabilities.md">Capability detail</a> · <a href="docs/verification.md">Verification scope</a></p>
+<h2>Applied AI at DTU</h2>
+<p>Developed in connection with Applied AI studies at the Technical University of Denmark. This independent student project translates course concepts into inspectable engineering mechanisms:</p>
+<ul>
+<li><strong>Context engineering:</strong> scoped requirements, decisions and relevant project state.</li>
+<li><strong>Harness engineering:</strong> task contracts, tool boundaries, isolation, validation and recovery.</li>
+<li><strong>Architecture and evaluation:</strong> specialist responsibilities, observable execution, regression checks and human authority.</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="assets/applied-ai-map.svg"><img src="assets/applied-ai-map.svg" alt="Applied AI concepts mapped to GameFactory components" style="max-width: 100%;"></a></p>
+<p><a href="assets/applied-ai-map.svg">View full-size diagram</a> · <a href="docs/applied-ai-case-study.md">Read the existing technical case study</a>, including the earlier Fleet prototype, evaluation dimensions and lessons learned. The private coursework submission is not reproduced; no DTU endorsement is implied.</p>
+<h2>Technical Limitations and Lessons Learned</h2>
+<p><a target="_blank" rel="noopener noreferrer" href="assets/production-loop.svg"><img src="assets/production-loop.svg" alt="Production, evaluation and bounded feedback loop" style="max-width: 100%;"></a></p>
+<p>Role definitions are not proof of agent execution. Fixture tests are not live-tool proof. Technical PASS is not artistic acceptance. The discontinued Star Greenhouse 2 experiment made that last distinction concrete.</p>
+<p>GameFactory coordinates context, tasks, guarded application and evidence. <strong>Codex supplied the implementation, operated tools, reviewed its own work and packaged releases.</strong> General autonomy and subjective quality remain unproven. The retained framework checks cover named lanes; no new full framework regression was run for this presentation.</p>
+<p><a href="assets/production-loop.svg">View full-size diagram</a> · <a href="docs/applied-ai-case-study.md#9-star-greenhouse-2-limitations-and-lessons">Limits and lessons</a> · <a href="docs/roadmap.md">Restrained future directions</a></p>
+<h2>GameFactory in Action</h2>
+<h3>One Game. Three Prompts. Three Iterations.</h3>
+<p><em>From a simple request to a playable game, then incremental improvements without repeating the original requirements.</em></p>
+<h3>01 — Create</h3>
+<p><strong>Exact opening line</strong> — <a href="examples/little-star-jump/README.md#iteration-01--create">full original request</a>.</p>
+<blockquote>
+<p>Improve Little Star Jump into a small but polished, complete-feeling 2D pixel-art platformer.</p>
+</blockquote>
+<p><a target="_blank" rel="noopener noreferrer" href="examples/little-star-jump/media/01-create.gif"><img src="examples/little-star-jump/media/01-create.gif" alt="Actual v0.2.0 gameplay: collect three stars and reach the flag" style="max-width: 100%;"></a></p>
+<p><em>v0.2.0 · Recorded from the preserved Windows release.</em></p>
+<p>A working prototype became a polished miniature platformer: animated pixel scenery, responsive controls, sound, title/pause/victory screens and replay. <strong>29 gameplay checks + 34 rendered checks passed.</strong></p>
+<p><a href="examples/little-star-jump/README.md#iteration-01--create">Iteration 01 evidence and playable output</a></p>
+<h3>02 — Improve</h3>
+<blockquote>
+<p>The jumping feels too floaty. Make it snappier and more responsive.</p>
+</blockquote>
+<p><a target="_blank" rel="noopener noreferrer" href="examples/little-star-jump/media/02-improve.gif"><img src="examples/little-star-jump/media/02-improve.gif" alt="Actual v0.2.1 gameplay: tap and held jumps" style="max-width: 100%;"></a></p>
+<p><em>v0.2.1 · Tap for a hop; hold for height.</em></p>
+<p>Stronger gravity and faster falls cut held-jump airtime by <strong>25%: 0.867 → 0.650 seconds</strong>, with almost the same height. The three-star route, coyote time and input buffer stayed intact. <strong>32 gameplay + 37 rendered checks passed.</strong></p>
+<p><a href="examples/little-star-jump/README.md#iteration-02--improve">Before/after clips, changed files and evidence</a></p>
+<h3>03 — Extend</h3>
+<blockquote>
+<p>Add a moving platform that I can jump onto.</p>
+</blockquote>
+<p><a target="_blank" rel="noopener noreferrer" href="examples/little-star-jump/media/03-extend.gif"><img src="examples/little-star-jump/media/03-extend.gif" alt="Actual v0.2.2 gameplay: jump onto the moving platform and ride it" style="max-width: 100%;"></a></p>
+<p><em>v0.2.2 · Jump aboard; the platform carries the player automatically.</em></p>
+<p>A moving mossy platform added an optional route to the middle ledge. Boarding, riding through a turnaround, jumping off, pause/restart and the original route were checked. <strong>41 gameplay + 47 rendered checks passed.</strong></p>
+<p><a href="examples/little-star-jump/README.md#iteration-03--extend">Iteration 03 evidence and regression checks</a></p>
+<p><strong>Prompt 1 → Playable Game · Prompt 2 → Improved Jumping · Prompt 3 → Moving Platform</strong></p>
+<p><a href="examples/little-star-jump/SOURCE.md">Play or inspect all three releases</a> · <a href="examples/little-star-jump/README.md">Exact prompts and execution trail</a> · <a href="examples/little-star-jump/MEDIA.md">Media provenance and still-image fallbacks</a></p></article></body></html>

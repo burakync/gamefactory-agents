@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-21",
+  "scope": "Presentation-only checks; no production or release QA rerun",
+  "relative_paths_and_anchors": {
+    "result": "PASS",
+    "count": 70
+  },
+  "preservation": {
+    "result": "PASS",
+    "files": [
+      "assets/architecture.svg",
+      "assets/applied-ai-map.svg",
+      "assets/production-loop.svg",
+      "docs/applied-ai-case-study.md",
+      "COPYRIGHT.md"
+    ],
+    "core_and_demo_unchanged": true
+  },
+  "exact_prompts": {
+    "result": "PASS",
+    "count": 3
+  },
+  "historical_verification_snapshots": {
+    "result": "PASS",
+    "count": 3
+  },
+  "media": {
+    "result": "PASS",
+    "clips": 4,
+    "total_gif_bytes": 936513,
+    "executable_hashes_match": true
+  },
+  "public_scope_audit": {
+    "result": "PASS",
+    "files": 38,
+    "excluded": "Framework source, game source, executables, private coursework, credential/local-path patterns"
+  },
+  "markdown_render": [
+    {
+      "source": "README.md",
+      "destination": "preview.html",
+      "renderer": "GitHub REST Markdown API",
+      "status": 200
+    },
+    {
+      "source": "examples/little-star-jump/README.md",
+      "destination": "examples/little-star-jump/preview.html",
+      "renderer": "GitHub REST Markdown API",
+      "status": 200
+    }
+  ],
+  "browser_checks": [
+    {
+      "page": "preview.html",
+      "viewport": 1280,
+      "images": 6,
+      "result": "PASS"
+    },
+    {
+      "page": "preview.html",
+      "viewport": 390,
+      "images": 6,
+      "result": "PASS"
+    },
+    {
+      "page": "preview.html",
+      "viewport": 320,
+      "images": 6,
+      "result": "PASS"
+    },
+    {
+      "page": "examples/little-star-jump/preview.html",
+      "viewport": 1280,
+      "images": 5,
+      "result": "PASS"
+    },
+    {
+      "page": "examples/little-star-jump/preview.html",
+      "viewport": 390,
+      "images": 5,
+      "result": "PASS"
+    },
+    {
+      "page": "examples/little-star-jump/preview.html",
+      "viewport": 320,
+      "images": 5,
+      "result": "PASS"
+    }
+  ],
+  "public_demo_releases": [
+    {
+      "tag": "v0.2.0",
+      "commit": "bbf0d01396d831b1bf6bb8223057b733f639c820",
+      "release": "https://github.com/burakync/gamefactory-demo-platformer/releases/tag/v0.2.0",
+      "assets": [
+        {
+          "name": "Little-Star-Jump-0.2.0-Windows.zip",
+          "bytes": 39314966,
+          "digest": "sha256:83313ffb77fd4fef0bb6b738ab05974003944f4eca560c2493ee19413e07de26"
+        },
+        {
+          "name": "Little-Star-Jump-Prototype-Source.zip",
+          "bytes": 80947,
+          "digest": "sha256:290a2f4eb5d3c0c60f65cefb59dd78db013b86238be87346d650a6b2b911d54a"
+        }
+      ]
+    },
+    {
+      "tag": "v0.2.1",
+      "commit": "c9290128fbd6444b36d3def35e2cdf735007b060",
+      "release": "https://github.com/burakync/gamefactory-demo-platformer/releases/tag/v0.2.1",
+      "assets": [
+        {
+          "name": "Little-Star-Jump-0.2.1-Windows.zip",
+          "bytes": 39315442,
+          "digest": "sha256:1432fed99f125f9c06fea74b74296ab160bc0ba2be557bb2d7889e2af08e9151"
+        }
+      ]
+    },
+    {
+      "tag": "v0.2.2",
+      "commit": "60c873b82ff07dc2df2e2f1d7292ea92143705fb",
+      "release": "https://github.com/burakync/gamefactory-demo-platformer/releases/tag/v0.2.2",
+      "assets": [
+        {
+          "name": "Little-Star-Jump-0.2.2-Windows.zip",
+          "bytes": 39318690,
+          "digest": "sha256:d3e66cdaa0898e709d24bbcca3849815747d623893d17b22f9043548dcbe2770"
+        }
+      ]
+    }
+  ],
+  "whitespace": "PASS",
+  "not_run": [
+    "New game production",
+    "Historical game regression suites",
+    "New framework regression suite",
+    "Live showcase repository rendering before first publication",
+    "Owner visual acceptance"
+  ]
+}
