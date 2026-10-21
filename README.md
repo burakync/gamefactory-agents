@@ -64,15 +64,15 @@ GameFactory coordinates context, tasks, guarded application and evidence. **Code
 
 ### 01 — Create
 
-**Exact opening line** — [full original request](examples/little-star-jump/README.md#iteration-01--create).
+**Prompt** — [full prompt and provenance](examples/little-star-jump/README.md#iteration-01--create).
 
-> Improve Little Star Jump into a small but polished, complete-feeling 2D pixel-art platformer.
+> Create Little Star Jump as a small but polished, complete-feeling 2D pixel-art platformer.
 
 ![Actual v0.2.0 gameplay: collect three stars and reach the flag](examples/little-star-jump/media/01-create.gif)
 
 *v0.2.0 · Recorded from the preserved Windows release.*
 
-A working prototype became a polished miniature platformer: animated pixel scenery, responsive controls, sound, title/pause/victory screens and replay. **29 gameplay checks + 34 rendered checks passed.**
+Created a polished miniature platformer: animated pixel scenery, responsive controls, sound, title/pause/victory screens and replay. **29 gameplay checks + 34 rendered checks passed.**
 
 [Iteration 01 evidence and playable output](examples/little-star-jump/README.md#iteration-01--create)
 

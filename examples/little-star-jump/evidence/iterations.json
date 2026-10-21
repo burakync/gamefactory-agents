@@ -83,6 +83,12 @@
       "qa-run": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/qa-run.json",
       "review-ingest": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/review-ingest.json",
       "handoff-create": "https://github.com/burakync/gamefactory-demo-platformer/blob/v0.2.0/docs/evidence/handoff-create.json"
+    },
+    "showcase_prompt": {
+      "text": "Create Little Star Jump as a small but polished, complete-feeling 2D pixel-art platformer.\nKeep the gameplay simple. Focus on visual quality, responsive controls, animations, and overall polish.\nUse GameFactory V2's existing production workflow to plan, implement, evaluate, and deliver the playable game autonomously.\nPreserve the previous working version. Include the original request, actual workflow evidence, and final game output in the GitHub demo case study.",
+      "path": "../prompts/01-showcase.txt",
+      "sha256": "9135f5fc1389e2af159463602d77e7afb477453786510f097d6470a3cd036c35",
+      "provenance": "Owner correction after publication: present iteration 01 as creating the game from scratch, with Create instead of Improve. The original prompt and its hash above remain the execution-record wording."
     }
   },
   {

@@ -4,7 +4,7 @@
 
 Little Star Jump is a one-screen Godot platformer: three stars unlock a flag, then the player can replay. These three real requests produced v0.2.0, v0.2.1 and v0.2.2. Each follow-up kept the existing game context instead of repeating the original requirements.
 
-The earlier prototype is preserved separately. The first showcased request explicitly asks to **improve** that prototype; it is not presented as a blank-slate creation prompt.
+The showcase follows the owner's clarified sequence: create the game, improve jumping, then extend it with a moving platform.
 
 | Stage | Native scene checks | Rendered checks | Result |
 | --- | --- | --- | --- |
@@ -20,18 +20,18 @@ This presentation reuses those completed records. It does not rerun production, 
 
 ## Iteration 01 — Create
 
-### Exact user prompt
+### Showcase prompt
 
-> Improve Little Star Jump into a small but polished, complete-feeling 2D pixel-art platformer.
+> Create Little Star Jump as a small but polished, complete-feeling 2D pixel-art platformer.
 > Keep the gameplay simple. Focus on visual quality, responsive controls, animations, and overall polish.
 > Use GameFactory V2's existing production workflow to plan, implement, evaluate, and deliver the playable game autonomously.
 > Preserve the previous working version. Include the original request, actual workflow evidence, and final game output in the GitHub demo case study.
 
-[Verbatim text](prompts/01.txt). This is the actual request retained in the execution record, not a rewritten historical quotation. The README quotes only its exact first sentence. “Create” names the first showcased polished output; a working prototype already existed.
+[Showcase text](prompts/01-showcase.txt). After publication, the owner corrected the opening wording to **Create**, clarifying that this stage describes creating the game from scratch. The [original recorded wording](prompts/01.txt) and raw execution receipts remain unchanged for provenance; the corrected display text is not presented as a verbatim historical receipt.
 
 ### Result and implementation
 
-The polished release evolved from the preserved prototype. It added original procedural pixel art, character/world animation, sound, forgiving controls and the full title → play → pause → victory → replay flow. Its final production pass also corrected headless audio allocation and toast readability.
+The resulting game includes original procedural pixel art, character/world animation, sound, forgiving controls and the full title → play → pause → victory → replay flow. Its final production pass also corrected headless audio allocation and toast readability.
 
 **Changed files:** `project.godot`; `scripts/main.gd`, `player.gd`, `pixel.gd`, `world.gd`, `sound.gd`; `tests/gameplay_test.gd`, `capture.gd` across the polish passes.
 

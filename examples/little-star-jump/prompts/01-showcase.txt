@@ -1,0 +1,4 @@
+Create Little Star Jump as a small but polished, complete-feeling 2D pixel-art platformer.
+Keep the gameplay simple. Focus on visual quality, responsive controls, animations, and overall polish.
+Use GameFactory V2's existing production workflow to plan, implement, evaluate, and deliver the playable game autonomously.
+Preserve the previous working version. Include the original request, actual workflow evidence, and final game output in the GitHub demo case study.
