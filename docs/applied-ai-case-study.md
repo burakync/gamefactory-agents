@@ -56,13 +56,8 @@ The report reserves major design, destructive and release decisions for humans. 
 
 The private release is checked through clean dependency installation, typecheck, compilation, real CLI smoke and a named focused test lane. Results are reported in [verification](verification.md). The tiny [Little Star Jump experiment](demo.md) separately records native gameplay tests and actual framework participation. No performance comparison or autonomous success rate is inferred from those checks.
 
-## 9. Star Greenhouse 2: limitations and lessons
 
-Star Greenhouse 2 produced technically inspectable native assets and a runnable scene, yet failed the owner's intended artistic outcome and was discontinued. It is not presented as completed production. No further art repair is part of this release.
-
-The experiment exposed two practical distinctions: structural validity does not imply coherent art, and a documented agent architecture does not establish operational autonomy. These are engineering observations from one project, not invented research findings or a statistically evaluated claim.
-
-## 10. Future engineering directions
+## 9. Future engineering directions
 
 Possible future work is limited to a clearer supported external-host path, representative task evaluations, proportionate verification cost and better separation of technical and subjective acceptance. These items are proposals, not shipped features. Commercial terms and supported platforms require separate review.
 
@@ -70,4 +65,4 @@ Possible future work is limited to a clearer supported external-host path, repre
 
 This account draws on the owner's private Module 2 coursework report, current V2 source/contracts, retained experiment receipts and fresh release/demo checks. The original report, student identifier, private paths, proprietary source and raw logs are deliberately excluded. The report describes an earlier Fleet prototype and does not independently prove V2 runtime behavior. DTU has not endorsed this product.
 
-Copyright © 2026 Burak Yenice. All rights reserved.
+Copyright © 2026 Burak Yenidzhe. All rights reserved.
