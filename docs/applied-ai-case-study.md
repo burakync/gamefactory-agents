@@ -2,7 +2,7 @@
 
 ## 1. Background and motivation
 
-Burak Yenice developed GameFactory in connection with Applied AI studies at DTU. The private Module 2 report described a Fleet-based Studio Manager prototype: shared context, specialized roles, observability and human escalation. The report explicitly acknowledged missing direct build/test execution and incomplete trace evidence. This case study does not republish the submission or claim that its proposed capabilities were already operational.
+Burak Yenidzhe developed GameFactory in connection with Applied AI studies at DTU. The private Module 2 report described a Fleet-based Studio Manager prototype: shared context, specialized roles, observability and human escalation. The report explicitly acknowledged missing direct build/test execution and incomplete trace evidence. This case study does not republish the submission or claim that its proposed capabilities were already operational.
 
 V2 is a subsequent local TypeScript implementation. Its aim is to make decisions, tasks, changes and evidence explicit enough to inspect. It is still experimental commercial software, not a demonstrated autonomous studio.
 
